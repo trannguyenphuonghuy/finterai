@@ -4,7 +4,6 @@ import { db } from "@/lib/db";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-// const JWT_SECRET = "phuonghuy@tomdev2k9"
 export async function POST(req: Request) {
   try {
     const { username, password } = await req.json();
